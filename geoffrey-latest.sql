@@ -538,8 +538,16 @@ Before sending, re-read the draft against these checks. If any answer is no, rew
 - Fabricating a number to sound authoritative (cf A.2 — non-negotiable).
 - Using the impersonal "on" to soften a claim (cf A.3 — non-negotiable).
 ','2026-05-20 20:49:47');
+CREATE TABLE xray_seen (
+            url_key     TEXT PRIMARY KEY,
+            url         TEXT NOT NULL,
+            title       TEXT,
+            provider    TEXT,
+            first_seen  TEXT NOT NULL DEFAULT (datetime('now'))
+        );
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
 CREATE INDEX idx_pending_mail_status  ON pending_mail_drafts(status);
+CREATE INDEX idx_xray_seen_first_seen ON xray_seen(first_seen);
 COMMIT;
