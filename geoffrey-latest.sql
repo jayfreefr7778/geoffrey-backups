@@ -545,6 +545,7 @@ CREATE TABLE xray_seen (
             provider    TEXT,
             first_seen  TEXT NOT NULL DEFAULT (datetime('now'))
         );
+INSERT INTO "xray_seen" VALUES('https://elhorizonte.mx/escena/cuando-lanzara-mon-laferte-femme-fatale-volumen-2/3513701629','https://www.elhorizonte.mx/escena/cuando-lanzara-mon-laferte-femme-fatale-volumen-2/3513701629','¿Cuándo lanzará Mon Laferte ''Femme Fatale Volumen 2''?','brave','2026-05-30 05:01:49');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
