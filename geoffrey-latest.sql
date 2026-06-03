@@ -15,6 +15,8 @@ INSERT INTO "audit_log" VALUES(4,'2026-05-31 23:50:48','ingestion','account_crea
 INSERT INTO "audit_log" VALUES(5,'2026-05-31 23:50:49','ingestion','account_created','6a1cc959e73224705',NULL,NULL);
 INSERT INTO "audit_log" VALUES(6,'2026-05-31 23:51:30','ingestion','account_created','6a1cc982b4c3c2ab1',NULL,NULL);
 INSERT INTO "audit_log" VALUES(7,'2026-05-31 23:51:32','ingestion','account_created','6a1cc9843a57d9736',NULL,NULL);
+INSERT INTO "audit_log" VALUES(8,'2026-06-02 11:47:37','ingestion','contact_created','6a1ec2d956179a49a',NULL,NULL);
+INSERT INTO "audit_log" VALUES(9,'2026-06-02 11:47:40','ingestion','opportunity_created','6a1ec2dbef7542e23',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -104,8 +106,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-01T21:31:33Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAia4LiOAAA=','2026-06-01 21:47:23');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-05-30T05:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAiZ9kR0AAA=','2026-05-31 23:52:09');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-02T19:54:51Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAidGRPtAAA=','2026-06-02 21:47:29');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-02T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAia4nk0AAA=','2026-06-02 15:47:31');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -564,6 +566,9 @@ CREATE TABLE xray_seen (
             first_seen  TEXT NOT NULL DEFAULT (datetime('now'))
         );
 INSERT INTO "xray_seen" VALUES('https://elhorizonte.mx/escena/cuando-lanzara-mon-laferte-femme-fatale-volumen-2/3513701629','https://www.elhorizonte.mx/escena/cuando-lanzara-mon-laferte-femme-fatale-volumen-2/3513701629','¿Cuándo lanzará Mon Laferte ''Femme Fatale Volumen 2''?','brave','2026-05-30 05:01:49');
+INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/01/albea-transformer-en-profondeur-un-site-industriel-dun-leader-mondial-de-lemballage-cosmetique','https://www.valtus.fr/blog/2026/06/01/albea-transformer-en-profondeur-un-site-industriel-dun-leader-mondial-de-lemballage-cosmetique/','Albéa : transformer en profondeur un site industriel d''un leader mondial de l''emballage cosmétique - Valtus FR','brave','2026-06-02 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://investegate.co.uk/announcement/rns/essensys--esys/result-of-general-meeting/9595215','https://www.investegate.co.uk/announcement/rns/essensys--esys/result-of-general-meeting/9595215','Result of General Meeting | Company Announcement | Investegate','brave','2026-06-02 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://thecerbatgem.com/2026/06/02/essensys-lonesys-stock-price-up-1-5-heres-why.html','https://www.thecerbatgem.com/2026/06/02/essensys-lonesys-stock-price-up-1-5-heres-why.html','essensys (LON:ESYS) Stock Price Up 1.5% – Here’s Why - The Cerbat Gem','brave','2026-06-02 14:01:48');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
