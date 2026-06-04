@@ -17,6 +17,9 @@ INSERT INTO "audit_log" VALUES(6,'2026-05-31 23:51:30','ingestion','account_crea
 INSERT INTO "audit_log" VALUES(7,'2026-05-31 23:51:32','ingestion','account_created','6a1cc9843a57d9736',NULL,NULL);
 INSERT INTO "audit_log" VALUES(8,'2026-06-02 11:47:37','ingestion','contact_created','6a1ec2d956179a49a',NULL,NULL);
 INSERT INTO "audit_log" VALUES(9,'2026-06-02 11:47:40','ingestion','opportunity_created','6a1ec2dbef7542e23',NULL,NULL);
+INSERT INTO "audit_log" VALUES(10,'2026-06-03 09:47:47','ingestion','opportunity_created','6a1ff843ebdb8fadb',NULL,NULL);
+INSERT INTO "audit_log" VALUES(11,'2026-06-03 11:47:38','ingestion','contact_created','6a20145a07067a512',NULL,NULL);
+INSERT INTO "audit_log" VALUES(12,'2026-06-03 11:47:40','ingestion','opportunity_created','6a20145cce6a09ce0',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -106,8 +109,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-02T19:54:51Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAidGRPtAAA=','2026-06-02 21:47:29');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-02T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAia4nk0AAA=','2026-06-02 15:47:31');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-03T19:54:42Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEdAABjh9rTbUXdTKA8-fOASe6cAAidIpS3AAA=','2026-06-03 21:47:35');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-03T17:16:54Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAidIsgnAAA=','2026-06-03 17:47:31');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
