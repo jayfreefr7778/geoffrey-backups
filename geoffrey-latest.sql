@@ -20,6 +20,13 @@ INSERT INTO "audit_log" VALUES(9,'2026-06-02 11:47:40','ingestion','opportunity_
 INSERT INTO "audit_log" VALUES(10,'2026-06-03 09:47:47','ingestion','opportunity_created','6a1ff843ebdb8fadb',NULL,NULL);
 INSERT INTO "audit_log" VALUES(11,'2026-06-03 11:47:38','ingestion','contact_created','6a20145a07067a512',NULL,NULL);
 INSERT INTO "audit_log" VALUES(12,'2026-06-03 11:47:40','ingestion','opportunity_created','6a20145cce6a09ce0',NULL,NULL);
+INSERT INTO "audit_log" VALUES(13,'2026-06-04 01:47:39','ingestion','account_created','6a20d93beb47b26e6',NULL,NULL);
+INSERT INTO "audit_log" VALUES(14,'2026-06-04 01:47:44','ingestion','opportunity_created','6a20d9400ece35433',NULL,NULL);
+INSERT INTO "audit_log" VALUES(15,'2026-06-04 09:48:00','ingestion','contact_created','6a2149d0387b14d09',NULL,NULL);
+INSERT INTO "audit_log" VALUES(16,'2026-06-04 09:48:00','ingestion','opportunity_created','6a2149d044132d917',NULL,NULL);
+INSERT INTO "audit_log" VALUES(17,'2026-06-04 11:47:42','ingestion','account_created','6a2165de3e76c45cf',NULL,NULL);
+INSERT INTO "audit_log" VALUES(18,'2026-06-04 11:47:43','ingestion','contact_created','6a2165dfcec8c38e7',NULL,NULL);
+INSERT INTO "audit_log" VALUES(19,'2026-06-04 11:47:47','ingestion','opportunity_created','6a2165e3ec39dfc03',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -109,8 +116,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-03T19:54:42Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEdAABjh9rTbUXdTKA8-fOASe6cAAidIpS3AAA=','2026-06-03 21:47:35');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-03T17:16:54Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAidIsgnAAA=','2026-06-03 17:47:31');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-04T22:14:10Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAfUcskEAABjh9rTbUXdTKA8-fOASe6cAAieY6BzAAA=','2026-06-04 23:47:38');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-04T14:01:55Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAidIsgpAAA=','2026-06-04 15:47:38');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -572,6 +579,9 @@ INSERT INTO "xray_seen" VALUES('https://elhorizonte.mx/escena/cuando-lanzara-mon
 INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/01/albea-transformer-en-profondeur-un-site-industriel-dun-leader-mondial-de-lemballage-cosmetique','https://www.valtus.fr/blog/2026/06/01/albea-transformer-en-profondeur-un-site-industriel-dun-leader-mondial-de-lemballage-cosmetique/','Albéa : transformer en profondeur un site industriel d''un leader mondial de l''emballage cosmétique - Valtus FR','brave','2026-06-02 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://investegate.co.uk/announcement/rns/essensys--esys/result-of-general-meeting/9595215','https://www.investegate.co.uk/announcement/rns/essensys--esys/result-of-general-meeting/9595215','Result of General Meeting | Company Announcement | Investegate','brave','2026-06-02 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://thecerbatgem.com/2026/06/02/essensys-lonesys-stock-price-up-1-5-heres-why.html','https://www.thecerbatgem.com/2026/06/02/essensys-lonesys-stock-price-up-1-5-heres-why.html','essensys (LON:ESYS) Stock Price Up 1.5% – Here’s Why - The Cerbat Gem','brave','2026-06-02 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/ru/%d0%bf%d0%b5%d1%80%d1%81%d0%bf%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d1%8b-%d0%b5%d0%b2%d1%80%d0%be%d0%bf%d0%b5%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%be%d0%b1%d0%be%d1%80%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d0%bf','https://ceinterim.com/ru/%d0%bf%d0%b5%d1%80%d1%81%d0%bf%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d1%8b-%d0%b5%d0%b2%d1%80%d0%be%d0%bf%d0%b5%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%be%d0%b1%d0%be%d1%80%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d0%bf/','Европейская оборонная промышленность: Следующие 25 лет','brave','2026-06-04 14:01:55');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/pl/perspektywy-europejskiego-przemyslu-obronnego-na-najblizsze-25-lat','https://ceinterim.com/pl/perspektywy-europejskiego-przemyslu-obronnego-na-najblizsze-25-lat/','Europejski przemysł obronny: Następne 25 lat','brave','2026-06-04 14:01:55');
+INSERT INTO "xray_seen" VALUES('https://dailypolitical.com/2026/06/03/essensys-lonesys-stock-price-up-1-5-time-to-buy.html','https://www.dailypolitical.com/2026/06/03/essensys-lonesys-stock-price-up-1-5-time-to-buy.html','essensys (LON:ESYS) Stock Price Up 1.5% – Time to Buy? - Daily Political','brave','2026-06-04 14:01:55');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
