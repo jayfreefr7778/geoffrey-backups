@@ -116,8 +116,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-04T22:14:10Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAfUcskEAABjh9rTbUXdTKA8-fOASe6cAAieY6BzAAA=','2026-06-04 23:47:38');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-04T14:01:55Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAidIsgpAAA=','2026-06-04 15:47:38');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-05T21:37:26Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAifHIPvAAA=','2026-06-05 21:47:45');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-05T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAieZJh4AAA=','2026-06-05 15:47:42');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -582,6 +582,13 @@ INSERT INTO "xray_seen" VALUES('https://thecerbatgem.com/2026/06/02/essensys-lon
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/ru/%d0%bf%d0%b5%d1%80%d1%81%d0%bf%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d1%8b-%d0%b5%d0%b2%d1%80%d0%be%d0%bf%d0%b5%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%be%d0%b1%d0%be%d1%80%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d0%bf','https://ceinterim.com/ru/%d0%bf%d0%b5%d1%80%d1%81%d0%bf%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d1%8b-%d0%b5%d0%b2%d1%80%d0%be%d0%bf%d0%b5%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%be%d0%b1%d0%be%d1%80%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d0%bf/','Европейская оборонная промышленность: Следующие 25 лет','brave','2026-06-04 14:01:55');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/pl/perspektywy-europejskiego-przemyslu-obronnego-na-najblizsze-25-lat','https://ceinterim.com/pl/perspektywy-europejskiego-przemyslu-obronnego-na-najblizsze-25-lat/','Europejski przemysł obronny: Następne 25 lat','brave','2026-06-04 14:01:55');
 INSERT INTO "xray_seen" VALUES('https://dailypolitical.com/2026/06/03/essensys-lonesys-stock-price-up-1-5-time-to-buy.html','https://www.dailypolitical.com/2026/06/03/essensys-lonesys-stock-price-up-1-5-time-to-buy.html','essensys (LON:ESYS) Stock Price Up 1.5% – Time to Buy? - Daily Political','brave','2026-06-04 14:01:55');
+INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/04/private-equity-quelles-opportunites-dans-un-marche-en-pleine-recomposition','https://www.valtus.fr/blog/2026/06/04/private-equity-quelles-opportunites-dans-un-marche-en-pleine-recomposition/','Private Equity : quelles opportunités dans un marché en pleine recomposition ? - Valtus FR','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/perspectives-de-lindustrie-europeenne-de-la-defense-pour-les-25-prochaines-annees','https://ceinterim.com/fr/perspectives-de-lindustrie-europeenne-de-la-defense-pour-les-25-prochaines-annees/','L''industrie européenne de la défense : Les 25 prochaines années','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1356-chef-des-finances-hongrois','https://ceinterim.com/fr/1356-chef-des-finances-hongrois/','1356 Chef intérimaire de la restructuration financière','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/european-defence-industry-outlook-next-25-years','https://ceinterim.com/european-defence-industry-outlook-next-25-years/','European Defence Industry: The Next 25 Years','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/1356-chief-finance-officer-hungary','https://ceinterim.com/1356-chief-finance-officer-hungary/','1356 Interim Chief Finance Restructuring Officer','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/ro/1356-director-financiar-ungaria','https://ceinterim.com/ro/1356-director-financiar-ungaria/','1356 Responsabil interimar cu restructurarea finanțelor','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni','https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni/','L''industria europea della difesa: I prossimi 25 anni','brave','2026-06-05 14:01:48');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
