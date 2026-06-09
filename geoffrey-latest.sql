@@ -27,6 +27,8 @@ INSERT INTO "audit_log" VALUES(16,'2026-06-04 09:48:00','ingestion','opportunity
 INSERT INTO "audit_log" VALUES(17,'2026-06-04 11:47:42','ingestion','account_created','6a2165de3e76c45cf',NULL,NULL);
 INSERT INTO "audit_log" VALUES(18,'2026-06-04 11:47:43','ingestion','contact_created','6a2165dfcec8c38e7',NULL,NULL);
 INSERT INTO "audit_log" VALUES(19,'2026-06-04 11:47:47','ingestion','opportunity_created','6a2165e3ec39dfc03',NULL,NULL);
+INSERT INTO "audit_log" VALUES(20,'2026-06-08 13:48:07','ingestion','account_created','6a26c81741c84a186',NULL,NULL);
+INSERT INTO "audit_log" VALUES(21,'2026-06-08 13:48:11','ingestion','opportunity_created','6a26c81bb91a5f983',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -116,8 +118,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-07T21:36:31Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAigCF0zAAA=','2026-06-07 21:47:54');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-05T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAieZJh4AAA=','2026-06-05 15:47:42');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-08T17:55:34Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAihCsI0AAA=','2026-06-08 19:48:02');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-08T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAigCY4wAAA=','2026-06-08 15:47:59');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -589,6 +591,8 @@ INSERT INTO "xray_seen" VALUES('https://ceinterim.com/european-defence-industry-
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/1356-chief-finance-officer-hungary','https://ceinterim.com/1356-chief-finance-officer-hungary/','1356 Interim Chief Finance Restructuring Officer','brave','2026-06-05 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/ro/1356-director-financiar-ungaria','https://ceinterim.com/ro/1356-director-financiar-ungaria/','1356 Responsabil interimar cu restructurarea finanțelor','brave','2026-06-05 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni','https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni/','L''industria europea della difesa: I prossimi 25 anni','brave','2026-06-05 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1358-sap-finance-and-controlling-expert','https://ceinterim.com/fr/1358-sap-finance-and-controlling-expert/','1358 SAP Finance and Controlling Expert','brave','2026-06-08 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://dn.se/sport/alla-europeiska-lander-kan-lamna-fifa-i-morgon','https://www.dn.se/sport/alla-europeiska-lander-kan-lamna-fifa-i-morgon/','Stjärnadvokaten Jean-Louis Dupont utmanar idrottens sanningar','brave','2026-06-08 14:01:49');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
