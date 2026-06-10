@@ -118,8 +118,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-08T17:55:34Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAihCsI0AAA=','2026-06-08 19:48:02');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-08T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAigCY4wAAA=','2026-06-08 15:47:59');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-09T19:09:36Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAihKlm7AAA=','2026-06-09 19:48:11');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-09T14:01:49Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAihKvjjAAA=','2026-06-09 15:48:11');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -593,6 +593,10 @@ INSERT INTO "xray_seen" VALUES('https://ceinterim.com/ro/1356-director-financiar
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni','https://ceinterim.com/it/prospettive-dellindustria-europea-della-difesa-nei-prossimi-25-anni/','L''industria europea della difesa: I prossimi 25 anni','brave','2026-06-05 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1358-sap-finance-and-controlling-expert','https://ceinterim.com/fr/1358-sap-finance-and-controlling-expert/','1358 SAP Finance and Controlling Expert','brave','2026-06-08 14:01:49');
 INSERT INTO "xray_seen" VALUES('https://dn.se/sport/alla-europeiska-lander-kan-lamna-fifa-i-morgon','https://www.dn.se/sport/alla-europeiska-lander-kan-lamna-fifa-i-morgon/','Stjärnadvokaten Jean-Louis Dupont utmanar idrottens sanningar','brave','2026-06-08 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1358-expert-en-finance-et-controle-de-gestion-sap','https://ceinterim.com/fr/1358-expert-en-finance-et-controle-de-gestion-sap/','1358 Expert en finance et contrôle de gestion SAP','brave','2026-06-09 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://nordicinterim.com/articles/dont-be-afraid-to-try','https://nordicinterim.com/articles/dont-be-afraid-to-try/','“Don’t be afraid to try”','brave','2026-06-09 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-giovedi--11-giugno-nRC_08062026_1931_669140076.html','https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-giovedi--11-giugno-nRC_08062026_1931_669140076.html','Economia e finanza: gli avvenimenti di GIOVEDI'' 11 giugno - Borsa Italiana','brave','2026-06-09 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://lequipe.fr/Football/Article/L-annonce-d-un-mysterieux-accord-avec-lassana-diarra-ne-met-pas-fin-a-l-action-collective-engagee-contre-la-fifa/1683118','https://www.lequipe.fr/Football/Article/L-annonce-d-un-mysterieux-accord-avec-lassana-diarra-ne-met-pas-fin-a-l-action-collective-engagee-contre-la-fifa/1683118','Malgré l''annonce d''un mystérieux accord avec Lassana Diarra, la FIFA n''en a pas terminé avec cette histoire et reste sous la menace d''une action collective','brave','2026-06-09 14:01:49');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
