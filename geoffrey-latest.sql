@@ -29,6 +29,7 @@ INSERT INTO "audit_log" VALUES(18,'2026-06-04 11:47:43','ingestion','contact_cre
 INSERT INTO "audit_log" VALUES(19,'2026-06-04 11:47:47','ingestion','opportunity_created','6a2165e3ec39dfc03',NULL,NULL);
 INSERT INTO "audit_log" VALUES(20,'2026-06-08 13:48:07','ingestion','account_created','6a26c81741c84a186',NULL,NULL);
 INSERT INTO "audit_log" VALUES(21,'2026-06-08 13:48:11','ingestion','opportunity_created','6a26c81bb91a5f983',NULL,NULL);
+INSERT INTO "audit_log" VALUES(22,'2026-06-11 11:48:28','ingestion','opportunity_created','6a2aa08c15cb433eb',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -118,8 +119,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-10T17:01:53Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAih14EYAAA=','2026-06-10 17:48:16');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-10T14:01:50Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAih18-OAAA=','2026-06-10 15:48:17');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-12T00:20:21Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAijJodzAAA=','2026-06-12 00:58:11');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-11T14:28:38Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAiirRsoAAA=','2026-06-11 15:48:20');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -598,6 +599,9 @@ INSERT INTO "xray_seen" VALUES('https://nordicinterim.com/articles/dont-be-afrai
 INSERT INTO "xray_seen" VALUES('https://borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-giovedi--11-giugno-nRC_08062026_1931_669140076.html','https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/economia-e-finanza-gli-avvenimenti-di-giovedi--11-giugno-nRC_08062026_1931_669140076.html','Economia e finanza: gli avvenimenti di GIOVEDI'' 11 giugno - Borsa Italiana','brave','2026-06-09 14:01:49');
 INSERT INTO "xray_seen" VALUES('https://lequipe.fr/Football/Article/L-annonce-d-un-mysterieux-accord-avec-lassana-diarra-ne-met-pas-fin-a-l-action-collective-engagee-contre-la-fifa/1683118','https://www.lequipe.fr/Football/Article/L-annonce-d-un-mysterieux-accord-avec-lassana-diarra-ne-met-pas-fin-a-l-action-collective-engagee-contre-la-fifa/1683118','Malgré l''annonce d''un mystérieux accord avec Lassana Diarra, la FIFA n''en a pas terminé avec cette histoire et reste sous la menace d''une action collective','brave','2026-06-09 14:01:49');
 INSERT INTO "xray_seen" VALUES('https://nordicinterim.se/artiklar/var-inte-radd-for-att-prova','https://nordicinterim.se/artiklar/var-inte-radd-for-att-prova/','”Var inte rädd för att prova”','brave','2026-06-10 14:01:50');
+INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/10/la-satisfaction-des-clients-et-managers-de-transition-au-coeur-de-la-demarche-dexcellence-valtus','https://www.valtus.fr/blog/2026/06/10/la-satisfaction-des-clients-et-managers-de-transition-au-coeur-de-la-demarche-dexcellence-valtus/','La satisfaction des clients et managers de transition, au cœur de la démarche d’excellence Valtus - Valtus FR','brave','2026-06-11 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','https://www.lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','Réseaux sociaux chez les moins de 16 ans | « C’est plus mauvais que bon pour moi »','brave','2026-06-11 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','https://fr.linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','Surchauffe a l’entrée de l’été … DSI de transition à votre service … Été 2024: un cabinet m’appelle fin juillet pour débuter une mission de remplacement d’un DSI début août … 👍 Été 2025 : je fais une visio avec le DG et le DRH d’une entreprise, pendant une j','brave','2026-06-11 14:01:47');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
