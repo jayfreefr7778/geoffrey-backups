@@ -30,6 +30,8 @@ INSERT INTO "audit_log" VALUES(19,'2026-06-04 11:47:47','ingestion','opportunity
 INSERT INTO "audit_log" VALUES(20,'2026-06-08 13:48:07','ingestion','account_created','6a26c81741c84a186',NULL,NULL);
 INSERT INTO "audit_log" VALUES(21,'2026-06-08 13:48:11','ingestion','opportunity_created','6a26c81bb91a5f983',NULL,NULL);
 INSERT INTO "audit_log" VALUES(22,'2026-06-11 11:48:28','ingestion','opportunity_created','6a2aa08c15cb433eb',NULL,NULL);
+INSERT INTO "audit_log" VALUES(23,'2026-06-12 12:58:22','ingestion','contact_created','6a2c026deed88f0f4',NULL,NULL);
+INSERT INTO "audit_log" VALUES(24,'2026-06-12 12:58:26','ingestion','opportunity_created','6a2c0271f4204867f',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -119,8 +121,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-12T00:20:21Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAijJodzAAA=','2026-06-12 00:58:11');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-11T14:28:38Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAiirRsoAAA=','2026-06-11 15:48:20');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-13T00:20:20Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAijJod1AAA=','2026-06-13 00:56:40');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-12T14:01:48Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAijJxDwAAA=','2026-06-12 14:58:18');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -602,6 +604,7 @@ INSERT INTO "xray_seen" VALUES('https://nordicinterim.se/artiklar/var-inte-radd-
 INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/10/la-satisfaction-des-clients-et-managers-de-transition-au-coeur-de-la-demarche-dexcellence-valtus','https://www.valtus.fr/blog/2026/06/10/la-satisfaction-des-clients-et-managers-de-transition-au-coeur-de-la-demarche-dexcellence-valtus/','La satisfaction des clients et managers de transition, au cœur de la démarche d’excellence Valtus - Valtus FR','brave','2026-06-11 14:01:47');
 INSERT INTO "xray_seen" VALUES('https://lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','https://www.lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','Réseaux sociaux chez les moins de 16 ans | « C’est plus mauvais que bon pour moi »','brave','2026-06-11 14:01:47');
 INSERT INTO "xray_seen" VALUES('https://linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','https://fr.linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','Surchauffe a l’entrée de l’été … DSI de transition à votre service … Été 2024: un cabinet m’appelle fin juillet pour débuter une mission de remplacement d’un DSI début août … 👍 Été 2025 : je fais une visio avec le DG et le DRH d’une entreprise, pendant une j','brave','2026-06-11 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://valtus.de/2026/06/11/transformation-familienunternehmen-interim-management','https://www.valtus.de/2026/06/11/transformation-familienunternehmen-interim-management/','Transformation im Familienunternehmen | Valtus Germany','brave','2026-06-12 14:01:48');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
