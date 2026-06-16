@@ -126,8 +126,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-14T16:38:57Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAfUcskEAABjh9rTbUXdTKA8-fOASe6cAAik2oUkAAA=','2026-06-14 16:57:09');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-13T13:49:27Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAikNAXOAAA=','2026-06-13 14:56:43');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-16T00:20:11Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAik29FIAAA=','2026-06-16 00:56:55');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-15T15:57:06Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAik24YsAAA=','2026-06-15 16:56:52');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -610,6 +610,7 @@ INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/10/la-satisfactio
 INSERT INTO "xray_seen" VALUES('https://lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','https://www.lapresse.ca/actualites/2026-06-10/reseaux-sociaux-chez-les-moins-de-16-ans/c-est-plus-mauvais-que-bon-pour-moi.php','Réseaux sociaux chez les moins de 16 ans | « C’est plus mauvais que bon pour moi »','brave','2026-06-11 14:01:47');
 INSERT INTO "xray_seen" VALUES('https://linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','https://fr.linkedin.com/posts/d2is-consulting_surchauffe-a-lentr%C3%A9e-de-l%C3%A9t%C3%A9-dsi-de-transition-activity-7470527098399461377-VRmR','Surchauffe a l’entrée de l’été … DSI de transition à votre service … Été 2024: un cabinet m’appelle fin juillet pour débuter une mission de remplacement d’un DSI début août … 👍 Été 2025 : je fais une visio avec le DG et le DRH d’une entreprise, pendant une j','brave','2026-06-11 14:01:47');
 INSERT INTO "xray_seen" VALUES('https://valtus.de/2026/06/11/transformation-familienunternehmen-interim-management','https://www.valtus.de/2026/06/11/transformation-familienunternehmen-interim-management/','Transformation im Familienunternehmen | Valtus Germany','brave','2026-06-12 14:01:48');
+INSERT INTO "xray_seen" VALUES('https://usinenouvelle.com/eco-social/rh/futur-du-travail/face-a-linstabilite-valtus-fait-du-management-de-transition-un-levier-strategique.QPHSCQ4EU5GZXL7RZZMGXB2LXA.html','https://www.usinenouvelle.com/eco-social/rh/futur-du-travail/face-a-linstabilite-valtus-fait-du-management-de-transition-un-levier-strategique.QPHSCQ4EU5GZXL7RZZMGXB2LXA.html','Face à l’instabilité, Valtus fait du management de transition un levier stratégique','brave','2026-06-15 14:01:46');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
