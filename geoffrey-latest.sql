@@ -129,8 +129,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-17T00:20:07Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAik29FMAAA=','2026-06-17 00:57:00');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-16T18:19:28Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAik24YuAAA=','2026-06-16 18:56:59');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-18T00:20:11Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAimr4kAAAA=','2026-06-18 00:57:06');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-17T14:01:49Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAimr_2hAAA=','2026-06-17 14:57:13');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -615,6 +615,8 @@ INSERT INTO "xray_seen" VALUES('https://linkedin.com/posts/d2is-consulting_surch
 INSERT INTO "xray_seen" VALUES('https://valtus.de/2026/06/11/transformation-familienunternehmen-interim-management','https://www.valtus.de/2026/06/11/transformation-familienunternehmen-interim-management/','Transformation im Familienunternehmen | Valtus Germany','brave','2026-06-12 14:01:48');
 INSERT INTO "xray_seen" VALUES('https://usinenouvelle.com/eco-social/rh/futur-du-travail/face-a-linstabilite-valtus-fait-du-management-de-transition-un-levier-strategique.QPHSCQ4EU5GZXL7RZZMGXB2LXA.html','https://www.usinenouvelle.com/eco-social/rh/futur-du-travail/face-a-linstabilite-valtus-fait-du-management-de-transition-un-levier-strategique.QPHSCQ4EU5GZXL7RZZMGXB2LXA.html','Face à l’instabilité, Valtus fait du management de transition un levier stratégique','brave','2026-06-15 14:01:46');
 INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/15/assises-france-transition-2026-le-rendez-vous-incontournable-du-management-de-transition','https://www.valtus.fr/blog/2026/06/15/assises-france-transition-2026-le-rendez-vous-incontournable-du-management-de-transition/','Assises France Transition 2026 : le rendez-vous incontournable du management de transition - Valtus FR','brave','2026-06-16 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/16/valtus-renforce-son-equipe-de-partners-avec-larrivee-de-valentine-laude','https://www.valtus.fr/blog/2026/06/16/valtus-renforce-son-equipe-de-partners-avec-larrivee-de-valentine-laude/','Valtus renforce son équipe de Partners avec l’arrivée de Valentine Laude - Valtus FR','brave','2026-06-17 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1363-pdg-pologne','https://ceinterim.com/fr/1363-pdg-pologne/','1363 - Directeur national par intérim pour la Pologne %','brave','2026-06-17 14:01:49');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
