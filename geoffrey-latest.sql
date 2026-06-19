@@ -40,6 +40,7 @@ INSERT INTO "audit_log" VALUES(29,'2026-06-14 16:57:06','ingestion','opportunity
 INSERT INTO "audit_log" VALUES(30,'2026-06-16 10:57:03','ingestion','opportunity_created','6a312bff8448ad21b',NULL,NULL);
 INSERT INTO "audit_log" VALUES(31,'2026-06-16 14:57:09','ingestion','opportunity_created','6a316444f2e786aed',NULL,NULL);
 INSERT INTO "audit_log" VALUES(32,'2026-06-16 14:57:11','ingestion','mission_created','6a3164470eae4594b',NULL,NULL);
+INSERT INTO "audit_log" VALUES(33,'2026-06-18 10:57:19','ingestion','opportunity_created','6a33cf0fc242638f4',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -129,8 +130,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-18T00:20:11Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAimr4kAAAA=','2026-06-18 00:57:06');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-17T14:01:49Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAimr_2hAAA=','2026-06-17 14:57:13');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-19T00:20:24Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAimr4kFAAA=','2026-06-19 00:57:12');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-18T15:58:21Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAimr_2kAAA=','2026-06-18 16:57:13');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -617,6 +618,8 @@ INSERT INTO "xray_seen" VALUES('https://usinenouvelle.com/eco-social/rh/futur-du
 INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/15/assises-france-transition-2026-le-rendez-vous-incontournable-du-management-de-transition','https://www.valtus.fr/blog/2026/06/15/assises-france-transition-2026-le-rendez-vous-incontournable-du-management-de-transition/','Assises France Transition 2026 : le rendez-vous incontournable du management de transition - Valtus FR','brave','2026-06-16 14:01:47');
 INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/16/valtus-renforce-son-equipe-de-partners-avec-larrivee-de-valentine-laude','https://www.valtus.fr/blog/2026/06/16/valtus-renforce-son-equipe-de-partners-avec-larrivee-de-valentine-laude/','Valtus renforce son équipe de Partners avec l’arrivée de Valentine Laude - Valtus FR','brave','2026-06-17 14:01:49');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1363-pdg-pologne','https://ceinterim.com/fr/1363-pdg-pologne/','1363 - Directeur national par intérim pour la Pologne %','brave','2026-06-17 14:01:49');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/1363-ceo-poland','https://ceinterim.com/1363-ceo-poland/','1363 - Interim Country Director Poland %','brave','2026-06-18 14:02:04');
+INSERT INTO "xray_seen" VALUES('https://ebay.com/itm/235967829449','https://www.ebay.com/itm/235967829449','Jzw-Shop Kailh Shadow Hunting Low Profile Key Switch 20 Piece Black | eBay','brave','2026-06-18 14:02:04');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
