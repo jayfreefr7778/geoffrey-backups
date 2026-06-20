@@ -130,8 +130,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-19T00:20:24Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAimr4kFAAA=','2026-06-19 00:57:12');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-18T15:58:21Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAimr_2kAAA=','2026-06-18 16:57:13');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-20T00:20:22Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAimr4kHAAA=','2026-06-20 00:27:09');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-19T14:01:47Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAimr_2lAAA=','2026-06-19 16:27:10');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -620,6 +620,9 @@ INSERT INTO "xray_seen" VALUES('https://valtus.fr/blog/2026/06/16/valtus-renforc
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1363-pdg-pologne','https://ceinterim.com/fr/1363-pdg-pologne/','1363 - Directeur national par intérim pour la Pologne %','brave','2026-06-17 14:01:49');
 INSERT INTO "xray_seen" VALUES('https://ceinterim.com/1363-ceo-poland','https://ceinterim.com/1363-ceo-poland/','1363 - Interim Country Director Poland %','brave','2026-06-18 14:02:04');
 INSERT INTO "xray_seen" VALUES('https://ebay.com/itm/235967829449','https://www.ebay.com/itm/235967829449','Jzw-Shop Kailh Shadow Hunting Low Profile Key Switch 20 Piece Black | eBay','brave','2026-06-18 14:02:04');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/fr/1360-responsable-des-ressources-humaines-par-interim-en-slovaquie','https://ceinterim.com/fr/1360-responsable-des-ressources-humaines-par-interim-en-slovaquie/','1360 Recrutement temporaire dans le secteur de l''industrie manufacturière','brave','2026-06-19 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://ceinterim.com/1360-interim-human-resources-manager-slovakia','https://ceinterim.com/1360-interim-human-resources-manager-slovakia/','1360 Interim HR Manufacturing %','brave','2026-06-19 14:01:47');
+INSERT INTO "xray_seen" VALUES('https://saasworthy.com/product-alternative/5508/essensys','https://www.saasworthy.com/product-alternative/5508/essensys','10 Best essensys Alternatives & Competitors in 2026','brave','2026-06-19 14:01:47');
 CREATE INDEX idx_drafts_status        ON drafts(status);
 CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
