@@ -48,6 +48,7 @@ INSERT INTO "audit_log" VALUES(37,'2026-06-22 14:27:36','ingestion','opportunity
 INSERT INTO "audit_log" VALUES(38,'2026-06-22 14:27:40','ingestion','mission_created','6a39465c97b2db336',NULL,NULL);
 INSERT INTO "audit_log" VALUES(39,'2026-06-22 18:27:49','ingestion','mission_created','6a397ea5b1c49cb1c',NULL,NULL);
 INSERT INTO "audit_log" VALUES(40,'2026-06-22 18:27:54','ingestion','opportunity_updated','6a394658ba1513743',NULL,NULL);
+INSERT INTO "audit_log" VALUES(41,'2026-06-24 00:27:45','ingestion','opportunity_created','6a3b2481a9bbd4aa1',NULL,NULL);
 CREATE TABLE backfill_ledger (
     message_id   TEXT PRIMARY KEY,
     action       TEXT NOT NULL,
@@ -137,8 +138,8 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-23T00:20:26Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAip9HuGAAA=','2026-06-23 00:27:27');
-INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-22T16:43:11Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAip89iVAAA=','2026-06-22 18:27:56');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-24T00:20:09Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAirJVusAAA=','2026-06-24 00:27:32');
+INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-23T12:30:30Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAip89iYAAA=','2026-06-24 00:27:49');
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
