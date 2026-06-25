@@ -138,8 +138,18 @@ CREATE TABLE mailbox_cursor (
             last_message_id  TEXT,
             updated_at       TEXT NOT NULL DEFAULT (datetime('now'))
         );
-INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-24T00:20:09Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAATdIxe3AABjh9rTbUXdTKA8-fOASe6cAAirJVusAAA=','2026-06-24 00:27:32');
+INSERT INTO "mailbox_cursor" VALUES('inbox','2026-06-24T23:47:13Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEMAABjh9rTbUXdTKA8-fOASe6cAAirxLyIAAA=','2026-06-25 00:01:39');
 INSERT INTO "mailbox_cursor" VALUES('sentitems','2026-06-23T12:30:30Z','AAMkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQBGAAAAAAATbMc9knsQRIAnAvTKh8PnBwBjh9rTbUXdTKA8-fOASe6cAAAAAAEJAABjh9rTbUXdTKA8-fOASe6cAAip89iYAAA=','2026-06-24 00:27:49');
+CREATE TABLE pending_actions (
+            id          TEXT PRIMARY KEY,
+            type        TEXT NOT NULL,
+            payload     TEXT NOT NULL,
+            status      TEXT NOT NULL DEFAULT 'pending'
+                        CHECK(status IN ('pending','approved','executed','rejected','failed')),
+            error       TEXT,
+            created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+            decided_at  TEXT
+        );
 CREATE TABLE pending_mail_drafts (
             id          TEXT PRIMARY KEY,
             to_addr     TEXT NOT NULL,
@@ -590,6 +600,18 @@ Before sending, re-read the draft against these checks. If any answer is no, rew
 - Fabricating a number to sound authoritative (cf A.2 — non-negotiable).
 - Using the impersonal "on" to soften a claim (cf A.3 — non-negotiable).
 ','2026-05-20 20:49:47');
+CREATE TABLE reminders (
+            id                 TEXT PRIMARY KEY,
+            text               TEXT NOT NULL,
+            start_iso          TEXT NOT NULL,
+            end_iso            TEXT NOT NULL,
+            calendar_event_id  TEXT,
+            created_at         TEXT NOT NULL DEFAULT (datetime('now'))
+        );
+CREATE TABLE secretary_seen (
+            mail_id      TEXT PRIMARY KEY,
+            processed_at TEXT NOT NULL DEFAULT (datetime('now'))
+        );
 CREATE TABLE xray_seen (
             url_key     TEXT PRIMARY KEY,
             url         TEXT NOT NULL,
@@ -636,4 +658,5 @@ CREATE INDEX idx_drafts_published_at  ON drafts(published_at);
 CREATE INDEX idx_audit_timestamp      ON audit_log(timestamp);
 CREATE INDEX idx_pending_mail_status  ON pending_mail_drafts(status);
 CREATE INDEX idx_xray_seen_first_seen ON xray_seen(first_seen);
+CREATE INDEX idx_pending_actions_status ON pending_actions(status);
 COMMIT;
