@@ -1935,7 +1935,7 @@ CREATE TABLE `job` (
   KEY `IDX_STATUS` (`status`,`deleted`),
   KEY `IDX_STATUS_SCHEDULED_JOB_ID` (`status`,`scheduled_job_id`),
   KEY `IDX_SCHEDULED_JOB_ID` (`scheduled_job_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3102785 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3114112 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3771,7 +3771,7 @@ CREATE TABLE `working_time_range` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-23 18:13:01
+-- Dump completed on 2026-08-24  3:17:04
 /*M!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19-11.8.6-MariaDB, for debian-linux-gnu (x86_64)
 --
@@ -21654,25 +21654,25 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_job` WRITE;
 /*!40000 ALTER TABLE `scheduled_job` DISABLE KEYS */;
 INSERT INTO `scheduled_job` VALUES
-('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-23 16:12:58','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d079e6e036cc5','Process Job Group',0,'ProcessJobGroup','Active','* * * * *',NULL,'2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-23 16:12:58','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-23 16:12:08','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-23 16:12:58','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-23 10:01:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-23 22:01:02','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d079eac8dbeb3','Check for New Version',0,'CheckNewVersion','Active','15 5 * * *','2026-08-23 03:15:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d079eb9b15e36','Check for New Versions of Installed Extensions',0,'CheckNewExtensionVersion','Active','25 5 * * *','2026-08-23 03:25:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-22 22:02:08','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-23 22:02:02','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d07a86704fea9','Check Group Email Accounts',0,'CheckInboundEmails','Active','*/2 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8742b65ec','Check Personal Email Accounts',0,'CheckEmailAccounts','Active','*/1 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-23 16:12:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-23 16:12:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8943e0d20','Clean-up',0,'Cleanup','Active','1 1 * * 0','2026-08-22 23:01:44','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-23 16:10:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-23 16:12:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-22 23:10:09','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-23 16:12:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-23 16:10:08','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
+('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-24 01:10:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-24 01:12:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-23 23:10:02','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-24 01:10:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
 /*!40000 ALTER TABLE `scheduled_job` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -22033,4 +22033,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-23 18:13:02
+-- Dump completed on 2026-08-24  3:17:04
