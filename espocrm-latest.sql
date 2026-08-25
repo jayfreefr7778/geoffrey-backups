@@ -196,7 +196,7 @@ CREATE TABLE `action_history_record` (
   KEY `IDX_USER_ID` (`user_id`),
   KEY `IDX_AUTH_TOKEN_ID` (`auth_token_id`),
   KEY `IDX_AUTH_LOG_RECORD_ID` (`auth_log_record_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5585 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5596 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1935,7 +1935,7 @@ CREATE TABLE `job` (
   KEY `IDX_STATUS` (`status`,`deleted`),
   KEY `IDX_STATUS_SCHEDULED_JOB_ID` (`status`,`scheduled_job_id`),
   KEY `IDX_SCHEDULED_JOB_ID` (`scheduled_job_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3114112 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3144089 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2525,7 +2525,7 @@ CREATE TABLE `note` (
   KEY `IDX_MODIFIED_BY_ID` (`modified_by_id`),
   KEY `IDX_SUPER_PARENT` (`super_parent_id`,`super_parent_type`),
   FULLTEXT KEY `IDX_SYSTEM_FULL_TEXT_SEARCH` (`post`)
-) ENGINE=InnoDB AUTO_INCREMENT=1757 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1761 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2582,7 +2582,7 @@ CREATE TABLE `note_user` (
   UNIQUE KEY `UNIQ_NOTE_ID_USER_ID` (`note_id`,`user_id`),
   KEY `IDX_NOTE_ID` (`note_id`),
   KEY `IDX_USER_ID` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2619,7 +2619,7 @@ CREATE TABLE `notification` (
   KEY `IDX_RELATED` (`related_id`,`related_type`),
   KEY `IDX_RELATED_PARENT` (`related_parent_id`,`related_parent_type`),
   KEY `IDX_CREATED_BY_ID` (`created_by_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3153,7 +3153,7 @@ CREATE TABLE `stream_subscription` (
   KEY `IDX_USER_ENTITY` (`user_id`,`entity_id`,`entity_type`),
   KEY `IDX_ENTITY` (`entity_id`,`entity_type`),
   KEY `IDX_USER` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3771,7 +3771,7 @@ CREATE TABLE `working_time_range` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-24  3:17:04
+-- Dump completed on 2026-08-25  3:17:05
 /*M!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19-11.8.6-MariaDB, for debian-linux-gnu (x86_64)
 --
@@ -4275,7 +4275,9 @@ INSERT INTO `account` VALUES
 ('6a73164a31f7ec650','Atlanse',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'ESN d\'ingenierie informatique, Rueil-Malmaison, 250-999 salaries (Supply Chain, Data Management, DevOps, Infrastructure, Digital Workplace). Premier contact 05/08/2026 : candidature de Jay sur l\'offre Free-Work \'Manager de transition infrastructure\' (client agroalimentaire non nomme), publiee le 08/03/2026. Aucun interlocuteur nomme dans l\'annonce. Pas d\'historique de placement. Point de vigilance : vend en CDI ou en portage maison (ATLANSE Solutions), pas naturellement en prestation freelance - a valider avant tout investissement sur une offre de cette source.','2026-08-05 10:54:02','2026-08-05 10:54:02','2026-08-05 11:35:34',NULL,'6a01ff1c4e6698086',NULL,NULL,1,'Broker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL),
 ('6a7319caaa0a4281d','CAT-AMANIA',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'ESN creee en 1999, 950 collaborateurs, 71 MEUR de CA, 18 agences en France et a l\'international. Premier contact 05/08/2026 : candidature de Jay sur l\'offre Free-Work \'Directeur de Programme Transformation DSI - Ex-Directeur SI/Run/Production\' (client non nomme, IDF), publiee le 30/07/2026. Aucun interlocuteur nomme dans l\'annonce. Pas d\'historique de placement. Point de vigilance sur la qualite des annonces : celle-ci affiche 40-45 kEUR/an pour un directeur de programme senior sur une DSI a 350 MEUR - fourchette manifestement incoherente avec le poste decrit.','2026-08-05 11:08:58','2026-08-05 11:08:58','2026-08-05 11:35:55',NULL,'6a01ff1c4e6698086',NULL,NULL,1,'Broker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL),
 ('6a8578ce56b712742','HELIS',0,NULL,'Client',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-08-19 09:35:10','2026-08-19 09:35:10','2026-08-19 11:35:17',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL),
-('6a887031047ca449a','Synapsys',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-08-21 15:35:13','2026-08-21 15:35:13','2026-08-21 15:35:13',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL);
+('6a887031047ca449a','Synapsys',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-08-21 15:35:13','2026-08-21 15:35:13','2026-08-21 15:35:13',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL),
+('6a8c105250744d9fc','Grand groupe - Immobilier',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-08-24 09:35:14','2026-08-24 09:35:14','2026-08-24 09:35:18',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL),
+('6a8c5b2a6f6d8cb08','SeD (Societe des Entrepots et Distribution)',0,'https://www.sed.fr',NULL,NULL,NULL,NULL,'Moussy-le-Neuf',NULL,'France','77230',NULL,NULL,NULL,NULL,NULL,'Commissionnaire de transport et logisticien francais, fonde en 1971. Chiffres publies par le groupe sur sed.fr (releves le 2026-08-24) : plus de 50 ans d\'experience, 370 000 m2 d\'entrepots et plateformes de transit, 14 sites en France, 500 professionnels, 98 M EUR de CA en 2024. Metiers : commission de transport (terrestre, aerien, maritime, ferroviaire), logistique / supply chain, overseas import-export, transport domestique, douanes, solutions informatiques, immobilier d\'entrepots. Verticales citees : fashion, e-commerce, logistique industrielle, reverse logistics. Siege historique Marly-la-Ville (95) ; site concerne par l\'offre : 3 rue du Petit Marteau, 77230 Moussy-le-Neuf. Actionnariat familial et nom du president : a confirmer (non lu sur une source primaire). Taille 500 collaborateurs : SOUS la cible du core positioning INOVOPS (1 000-5 000+).','2026-08-24 14:54:34','2026-08-24 14:54:34','2026-08-24 14:54:34',NULL,'6a01ff1c4e6698086',NULL,'6a01d2f4cebaeec7f',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -5349,7 +5351,18 @@ INSERT INTO `action_history_record` VALUES
 ('6a8870310808c3ac9',0,5581,'Account',NULL,'create','2026-08-21 15:35:13','172.18.0.50','6a887031047ca449a','6a0e7568ca1894944',NULL,'6a887031013906b60'),
 ('6a8870337fb7c8b00',0,5582,'Contact',NULL,'create','2026-08-21 15:35:15','172.18.0.50','6a88703377c6fa620','6a0e7568ca1894944',NULL,'6a88703373c09c767'),
 ('6a88703719ab63ed5',0,5583,'Opportunity',NULL,'create','2026-08-21 15:35:19','172.18.0.50','6a8870371588bf18b','6a0e7568ca1894944',NULL,'6a8870371069a0888'),
-('6a8870387c25f42da',0,5584,'CInteraction',NULL,'create','2026-08-21 15:35:20','172.18.0.50','6a8870387b0273073','6a0e7568ca1894944',NULL,'6a887038780a2642b');
+('6a8870387c25f42da',0,5584,'CInteraction',NULL,'create','2026-08-21 15:35:20','172.18.0.50','6a8870387b0273073','6a0e7568ca1894944',NULL,'6a887038780a2642b'),
+('6a8c1052554cea4e5',0,5585,'Account',NULL,'create','2026-08-24 09:35:14','172.18.0.50','6a8c105250744d9fc','6a0e7568ca1894944',NULL,'6a8c10524d64b9569'),
+('6a8c1056545dd9332',0,5586,'Opportunity',NULL,'create','2026-08-24 09:35:18','172.18.0.50','6a8c10565015bc512','6a0e7568ca1894944',NULL,'6a8c10564bd0c5667'),
+('6a8c105946787be14',0,5587,'CInteraction',NULL,'create','2026-08-24 09:35:21','172.18.0.50','6a8c105944b3053e2','6a0e7568ca1894944',NULL,'6a8c105941b5f19ff'),
+('6a8c488d5e8944334',0,5588,'CInteraction',NULL,'create','2026-08-24 13:35:09','172.18.0.50','6a8c488d5cf8e4123','6a0e7568ca1894944',NULL,'6a8c488d589c2005c'),
+('6a8c5b2a7515c842a',0,5589,'Account',NULL,'create','2026-08-24 14:54:34','172.18.0.2','6a8c5b2a6f6d8cb08','6a01ff1c4e6698086',NULL,'6a8c5b2a6c029a306'),
+('6a8c5b2a8a028cae4',0,5590,'Opportunity',NULL,'create','2026-08-24 14:54:34','172.18.0.2','6a8c5b2a84ac3f7ab','6a01ff1c4e6698086',NULL,'6a8c5b2a810e7975b'),
+('6a8c5b2a9702decac',0,5591,'Account',NULL,'read','2026-08-24 14:54:34','172.18.0.2','6a8c5b2a6f6d8cb08','6a01ff1c4e6698086',NULL,'6a8c5b2a9403066f3'),
+('6a8c5b2aa5fe2036e',0,5592,'Opportunity',NULL,'read','2026-08-24 14:54:34','172.18.0.2','6a8c5b2a84ac3f7ab','6a01ff1c4e6698086',NULL,'6a8c5b2aa22b676b5'),
+('6a8c5cf04f1b15b5c',0,5593,'Opportunity',NULL,'read','2026-08-24 15:02:08','172.18.0.2','6a8c5b2a84ac3f7ab','6a01ff1c4e6698086',NULL,'6a8c5cf04c394eb10'),
+('6a8c5cf05dfe3fba9',0,5594,'Opportunity',NULL,'update','2026-08-24 15:02:08','172.18.0.2','6a8c5b2a84ac3f7ab','6a01ff1c4e6698086',NULL,'6a8c5cf058da67e35'),
+('6a8c5cf06d2cd43fd',0,5595,'Opportunity',NULL,'read','2026-08-24 15:02:08','172.18.0.2','6a8c5b2a84ac3f7ab','6a01ff1c4e6698086',NULL,'6a8c5cf06954a91fb');
 /*!40000 ALTER TABLE `action_history_record` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -15673,7 +15686,75 @@ INSERT INTO `auth_log_record` VALUES
 ('6a8ade68c646864c6',0,'geoffrey-agent','172.18.0.50','2026-08-23 11:50:00',0,NULL,1787485800.7948,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
 ('6a8ade68ceac33d33',0,'geoffrey-agent','172.18.0.50','2026-08-23 11:50:00',0,NULL,1787485800.8341,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
 ('6a8b16a810f680084',0,'geoffrey-agent','172.18.0.50','2026-08-23 15:50:00',0,NULL,1787500200.0523,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
-('6a8b16a81a01aaa7d',0,'geoffrey-agent','172.18.0.50','2026-08-23 15:50:00',0,NULL,1787500200.0925,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL);
+('6a8b16a81a01aaa7d',0,'geoffrey-agent','172.18.0.50','2026-08-23 15:50:00',0,NULL,1787500200.0925,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db4d0100280',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.299,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db571078503',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.3432,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db6085635e1',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.3817,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db689f9bf66',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.4157,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db71c30a375',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.4555,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bd6db79755aebd',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:30:03',0,NULL,1787549403.4867,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bdb8906f591980',0,'geoffrey-agent','172.18.0.50','2026-08-24 05:50:01',0,NULL,1787550601.0052,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bf7a85e6756cac',0,'geoffrey-agent','172.18.0.50','2026-08-24 07:50:00',0,NULL,1787557800.36,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8bf7a8680338387',0,'geoffrey-agent','172.18.0.50','2026-08-24 07:50:00',0,NULL,1787557800.4166,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c1048c30b2e6b9',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:04',0,NULL,1787564104.7802,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c1048cc11229a2',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:04',0,NULL,1787564104.8219,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c104b2a018d724',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:07',0,NULL,1787564107.1581,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c104b35322222e',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:07',0,NULL,1787564107.2028,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10512183666d1',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:13',0,NULL,1787564113.1196,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10512a94e1324',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:13',0,NULL,1787564113.1591,'http://espocrm/api/v1/Account','POST','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c1052435adcb5a',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:14',0,NULL,1787564114.2652,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10524d64b9569',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:14',0,NULL,1787564114.3037,'http://espocrm/api/v1/Account','POST','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c1053db4c81484',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:15',0,NULL,1787564115.8842,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10564bd0c5667',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:18',0,NULL,1787564118.2932,'http://espocrm/api/v1/Opportunity','POST','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10593735df251',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:21',0,NULL,1787564121.2132,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c105941b5f19ff',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:21',0,NULL,1787564121.2545,'http://espocrm/api/v1/CInteraction','POST','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c10594d1f23b2d',0,'geoffrey-agent','172.18.0.50','2026-08-24 09:35:21',0,NULL,1787564121.3019,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c2fe8cc9f23dba',0,'geoffrey-agent','172.18.0.50','2026-08-24 11:50:00',0,NULL,1787572200.8127,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c2fe8d7d450838',0,'geoffrey-agent','172.18.0.50','2026-08-24 11:50:00',0,NULL,1787572200.8696,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c488b4b80e8e5e',0,'geoffrey-agent','172.18.0.50','2026-08-24 13:35:07',0,NULL,1787578507.2929,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c488b545acfa29',0,'geoffrey-agent','172.18.0.50','2026-08-24 13:35:07',0,NULL,1787578507.3323,'http://espocrm/api/v1/Contact','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c488d46ba3978f',0,'geoffrey-agent','172.18.0.50','2026-08-24 13:35:09',0,NULL,1787578509.2801,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c488d4f75fd3b6',0,'geoffrey-agent','172.18.0.50','2026-08-24 13:35:09',0,NULL,1787578509.3105,'http://espocrm/api/v1/Contact','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c488d589c2005c',0,'geoffrey-agent','172.18.0.50','2026-08-24 13:35:09',0,NULL,1787578509.3511,'http://espocrm/api/v1/CInteraction','POST','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c5a4438b5ad34c',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.211,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a444831d22a1',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.2834,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a4458b5cd0fe',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.348,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44697bd20f6',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.4167,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44757084010',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.4721,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a4482bbd2f0c',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.5227,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44924c38ec7',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.5842,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44a066490b8',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.6432,'http://crm.karubbean.duckdns.org/api/v1/Metadata','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44b32386f59',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.7182,'http://crm.karubbean.duckdns.org/api/v1/Metadata','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44c2736ca19',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.7808,'http://crm.karubbean.duckdns.org/api/v1/Metadata','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5a44d0fa35d26',0,'claude-code-agent','172.18.0.2','2026-08-24 14:50:44',0,NULL,1787583044.8417,'http://crm.karubbean.duckdns.org/api/v1/Metadata','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5ae969f1fecea',0,'claude-code-agent','172.18.0.2','2026-08-24 14:53:29',0,NULL,1787583209.4204,'http://crm.karubbean.duckdns.org/api/v1/Metadata','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b25429aeb379',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.2563,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b25517f010db',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.3211,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b255e85db71e',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.377,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b256b6e86374',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.4248,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b257715a3641',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.4781,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2582ece9006',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.5225,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b259092a2bf0',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:29',0,NULL,1787583269.5786,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b29d4a477ea5',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:33',0,NULL,1787583273.8591,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b29e08c6c135',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:33',0,NULL,1787583273.9063,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a2aa254d03',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.1608,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a3c753ddd6',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.2335,'http://crm.karubbean.duckdns.org/api/v1/Account','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a49f294a69',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.2885,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a5521f5673',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.3396,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a5f71837e9',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.3818,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a6c029a306',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.4299,'http://crm.karubbean.duckdns.org/api/v1/Account','POST','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a810e7975b',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.5143,'http://crm.karubbean.duckdns.org/api/v1/Opportunity','POST','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2a9403066f3',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.5971,'http://crm.karubbean.duckdns.org/api/v1/Account/6a8c5b2a6f6d8cb08','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5b2aa22b676b5',0,'claude-code-agent','172.18.0.2','2026-08-24 14:54:34',0,NULL,1787583274.6539,'http://crm.karubbean.duckdns.org/api/v1/Opportunity/6a8c5b2a84ac3f7ab','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5cf04c394eb10',0,'claude-code-agent','172.18.0.2','2026-08-24 15:02:08',0,NULL,1787583728.298,'http://crm.karubbean.duckdns.org/api/v1/Opportunity/6a8c5b2a84ac3f7ab','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5cf058da67e35',0,'claude-code-agent','172.18.0.2','2026-08-24 15:02:08',0,NULL,1787583728.3489,'http://crm.karubbean.duckdns.org/api/v1/Opportunity/6a8c5b2a84ac3f7ab','PUT','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c5cf06954a91fb',0,'claude-code-agent','172.18.0.2','2026-08-24 15:02:08',0,NULL,1787583728.4155,'http://crm.karubbean.duckdns.org/api/v1/Opportunity/6a8c5b2a84ac3f7ab','GET','ApiKey',NULL,'6a01ff1c4e6698086',NULL),
+('6a8c64aaf010c2e7c',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:35:06',0,NULL,1787585706.9676,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c64ab06f6205a7',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:35:07',0,NULL,1787585707.0134,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c6828a939db0d2',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:50:00',0,NULL,1787586600.6691,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c6828b0a2207b7',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:50:00',0,NULL,1787586600.714,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c80c9c8523a00d',0,'geoffrey-agent','172.18.0.50','2026-08-24 17:35:05',0,NULL,1787592905.8009,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8c80c9d2da0f3cb',0,'geoffrey-agent','172.18.0.50','2026-08-24 17:35:05',0,NULL,1787592905.8531,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL);
 /*!40000 ALTER TABLE `auth_log_record` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -15984,7 +16065,9 @@ INSERT INTO `c_interaction` VALUES
 ('6a7d73b0dfa92aa73','Reponse positive - Fauquenot Pierre',0,'Pierre Fauquenot (Président INFORTIVE) accuse réception de la confirmation de disponibilité DSI/CTO de transition début août de Jay.','2026-08-13 07:35:12','2026-08-13 07:35:12','Re: Manager de transition DSI/CTO — disponibilité début août',NULL,'Positif','2026-08-13 04:34:33','Email','<CAER9bQ30ChnaV21mKpikRJp3QN-JuPXqVnJqoNm51vxuwrUyGg@mail.gmail.com>','AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAL-KTiNfqp5NuRNsQHbLT7E=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,'6a18ccf6d1f703a05','6a4c2bdb7873d4060',NULL),
 ('6a8594fbe66d562a7','Directeur de Programme IT – Transformation & Déménagement de sites',0,'Candidature transmise à HELIS le 19/08/2026 pour une mission freelance 12 mois de Directeur de Programme IT (transformation & déménagement de sites, La Défense) ; Jay a proposé 850 € HT/jour et posé deux questions de cadrage sur le budget du programme et le TJM client.','2026-08-19 11:35:23','2026-08-19 11:35:23','Confirmation de votre candidature Directeur de Programme IT – Transformation & Déménagement de sites (H/F)','Présentation de mandat',NULL,'2026-08-19 08:28:24','Email',NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAGMJ37eGqJRGi8bxjqJz8VY=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,'6a18473f1e4549d8a',NULL,'6a8594f5ca3859e83'),
 ('6a870291f2b4c3768','Directeur de Programme IT – Transformation & Déménagement de sites',0,'Candidature refusée sur Free-Work ; motif : rémunération non alignée avec le budget proposé.','2026-08-20 13:35:13','2026-08-20 13:35:13','Retour sur votre candidature pour le poste de Directeur de Programme IT – Transformation & Déménagement de sites (H/F)','Présentation de mandat',NULL,'2026-08-20 09:49:58','Email',NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAKxqRgXJ3fVCkrmlvurR6G8=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,'6a18473f1e4549d8a',NULL,'6a8702908b35f2e27'),
-('6a8870387b0273073','Message ayant reçu une réponse : Nouvelle opportunité chez Synapsys',0,'Camille Bourgeois (recruteur, Synapsys) propose un appel avant 10h pour discuter d\'une opportunité.','2026-08-21 15:35:20','2026-08-21 15:35:20','Message ayant reçu une réponse : Nouvelle opportunité chez Synapsys','Présentation de mandat',NULL,'2026-08-21 15:22:10','Email',NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAOv578NE1VRGkMTZ4k6dhMY=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL,'6a88703377c6fa620','6a8870371588bf18b');
+('6a8870387b0273073','Message ayant reçu une réponse : Nouvelle opportunité chez Synapsys',0,'Camille Bourgeois (recruteur, Synapsys) propose un appel avant 10h pour discuter d\'une opportunité.','2026-08-21 15:35:20','2026-08-21 15:35:20','Message ayant reçu une réponse : Nouvelle opportunité chez Synapsys','Présentation de mandat',NULL,'2026-08-21 15:22:10','Email',NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAOv578NE1VRGkMTZ4k6dhMY=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL,'6a88703377c6fa620','6a8870371588bf18b'),
+('6a8c105944b3053e2','Consultant Senior Adoption Copilot & Transformation des Usages',0,'Notification de mission freelance : Consultant Senior Adoption Copilot & Transformation des Usages, grand groupe immobilier, Paris, septembre 2026, 6 mois+, via broker Crème de la crème.','2026-08-24 09:35:21','2026-08-24 09:35:21','Un beau TJM pour ta prochaine mission : Consultant Senior Adoption Copilot & Transformation des Usages','Présentation de mandat',NULL,'2026-08-24 07:52:52','Email',NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAK1tYDmj7DpBuNsa9pYSd80=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,'6a1cc959e73224705',NULL,'6a8c10565015bc512'),
+('6a8c488d5cf8e4123','Reponse positive - Paul Carine',0,'Broker DELVILLE confirme que le profil de Jay est visible par l\'équipe et s\'engage à transmettre pour qualification / proposition de mission.','2026-08-24 13:35:09','2026-08-24 13:35:09','RE: Manager de transition DSI/CTO - disponibilite debut aout',NULL,'Positif','2026-08-24 13:00:38','Email','<PR3P195MB0620E888832EE05ABEFAD349E9A02@PR3P195MB0620.EURP195.PROD.OUTLOOK.COM>','AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAC7prHlGTqRKqUAC9pamK50=',NULL,NULL,NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,'6a18ce6153e3691dd','6a64dd38b46558d67',NULL);
 /*!40000 ALTER TABLE `c_interaction` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21130,7 +21213,11 @@ INSERT INTO `note` VALUES
 ('6a8702908c783a612',0,NULL,'{\"statusValue\":\"Perdue\",\"statusField\":\"stage\"}','Create',NULL,1753,0,0,0,'2026-08-20 13:35:12','2026-08-20 13:35:12','6a8702908b35f2e27','Opportunity',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL),
 ('6a88703105a14927d',0,NULL,'{}','Create',NULL,1754,0,0,0,'2026-08-21 15:35:13','2026-08-21 15:35:13','6a887031047ca449a','Account',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL),
 ('6a8870337c3c984d0',0,NULL,'{}','Create',NULL,1755,0,0,0,'2026-08-21 15:35:15','2026-08-21 15:35:15','6a88703377c6fa620','Contact',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL),
-('6a887037166478eb2',0,NULL,'{\"statusValue\":\"Prospection\",\"statusField\":\"stage\"}','Create',NULL,1756,0,0,0,'2026-08-21 15:35:19','2026-08-21 15:35:19','6a8870371588bf18b','Opportunity',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL);
+('6a887037166478eb2',0,NULL,'{\"statusValue\":\"Prospection\",\"statusField\":\"stage\"}','Create',NULL,1756,0,0,0,'2026-08-21 15:35:19','2026-08-21 15:35:19','6a8870371588bf18b','Opportunity',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL),
+('6a8c105251960045a',0,NULL,'{}','Create',NULL,1757,0,0,0,'2026-08-24 09:35:14','2026-08-24 09:35:14','6a8c105250744d9fc','Account',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,NULL),
+('6a8c1056515d4e6e4',0,NULL,'{\"statusValue\":\"Prospection\",\"statusField\":\"stage\"}','Create',NULL,1758,0,0,0,'2026-08-24 09:35:18','2026-08-24 09:35:18','6a8c10565015bc512','Opportunity',NULL,NULL,'6a0e7568ca1894944',NULL,'6a8c105250744d9fc','Account'),
+('6a8c5b2a71536ed8e',0,NULL,'{\"assignedUserId\":\"6a01d2f4cebaeec7f\",\"assignedUserName\":\"ANGELE Jayson\"}','Create',NULL,1759,0,0,0,'2026-08-24 14:54:34','2026-08-24 14:54:34','6a8c5b2a6f6d8cb08','Account',NULL,NULL,'6a01ff1c4e6698086',NULL,NULL,NULL),
+('6a8c5b2a863c8e780',0,NULL,'{\"assignedUserId\":\"6a01d2f4cebaeec7f\",\"assignedUserName\":\"ANGELE Jayson\",\"statusValue\":\"Qualification\",\"statusField\":\"stage\"}','Create',NULL,1760,0,0,0,'2026-08-24 14:54:34','2026-08-24 14:54:34','6a8c5b2a84ac3f7ab','Opportunity',NULL,NULL,'6a01ff1c4e6698086',NULL,'6a8c5b2a6f6d8cb08','Account');
 /*!40000 ALTER TABLE `note` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21190,7 +21277,8 @@ INSERT INTO `note_user` VALUES
 (20,'6a73164a9d4350b12','6a01d2f4cebaeec7f',0),
 (21,'6a7319cae686697cf','6a01d2f4cebaeec7f',0),
 (22,'6a7319cb341f5fdd9','6a01d2f4cebaeec7f',0),
-(23,'6a7319cb374ae622f','6a01d2f4cebaeec7f',0);
+(23,'6a7319cb374ae622f','6a01d2f4cebaeec7f',0),
+(24,'6a8c5b2a863c8e780','6a01d2f4cebaeec7f',0);
 /*!40000 ALTER TABLE `note_user` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21233,7 +21321,9 @@ INSERT INTO `notification` VALUES
 ('6a7c1b01a727db3c4',0,31,'{\"noteId\":\"6a7c1b01a50d66a27\"}','Note',0,0,'2026-08-12 07:04:33',NULL,'6a7c1b01a2c988a5e','6a01d2f4cebaeec7f','6a7c1b01a50d66a27','Note','6a73164a989f3dce4','Task',NULL),
 ('6a7c1b09382107b68',0,32,'{\"noteId\":\"6a7c1b0937419a611\"}','Note',0,0,'2026-08-12 07:04:41',NULL,'6a7c1b093604de847','6a01d2f4cebaeec7f','6a7c1b0937419a611','Note','6a7319cb321a0fa2a','Task',NULL),
 ('6a7d36a9d94160da6',0,33,'{\"noteId\":\"6a7d36a9d8623d916\"}','Note',0,0,'2026-08-13 03:14:49',NULL,'6a7d36a9d6eba2012','6a01d2f4cebaeec7f','6a7d36a9d8623d916','Note','6a731209323a46266','Task',NULL),
-('6a7e73329429ff61e',0,34,'{\"noteId\":\"6a7e7332933c2f1d9\"}','Note',0,0,'2026-08-14 01:45:22',NULL,'6a7e733291fdea24c','6a01d2f4cebaeec7f','6a7e7332933c2f1d9','Note','6a731209323a46266','Task',NULL);
+('6a7e73329429ff61e',0,34,'{\"noteId\":\"6a7e7332933c2f1d9\"}','Note',0,0,'2026-08-14 01:45:22',NULL,'6a7e733291fdea24c','6a01d2f4cebaeec7f','6a7e7332933c2f1d9','Note','6a731209323a46266','Task',NULL),
+('6a8c5b2a72e2e5b33',0,35,'{\"noteId\":\"6a8c5b2a71536ed8e\"}','Note',0,0,'2026-08-24 14:54:34',NULL,NULL,'6a01d2f4cebaeec7f','6a8c5b2a71536ed8e','Note','6a8c5b2a6f6d8cb08','Account',NULL),
+('6a8c5b2a87f58d95f',0,36,'{\"noteId\":\"6a8c5b2a863c8e780\"}','Note',0,0,'2026-08-24 14:54:34',NULL,NULL,'6a01d2f4cebaeec7f','6a8c5b2a863c8e780','Note','6a8c5b2a84ac3f7ab','Opportunity',NULL);
 /*!40000 ALTER TABLE `notification` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21327,7 +21417,9 @@ INSERT INTO `opportunity` VALUES
 ('6a73201af25639e51','Directeur de Programme Transformation DSI – CAT-AMANIA',0,NULL,'Qualification','Qualification',25,NULL,NULL,'Mission 6 mois, Île-de-France. Candidature transmise 05/08/2026. Jay a posé trois clarifications critiques : actualité des fourchettes tarifaires (40–45 k€/an, 600–700 €/jour), confirmation du positionnement 950 € HT/jour en freelance INOVOPS, et périmètre client du programme (porteur et comptage des 800 personnes).','2026-08-05 11:35:54','2026-08-05 11:35:54',NULL,'2026-08-05 11:35:54','6a7319caaa0a4281d','6a4c0321be584afca',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,'6a18473f1e4549d8a',950,'EUR','AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAENcn68w8j5KuIwCGPME7Yc='),
 ('6a8594f5ca3859e83','Directeur de Programme IT – HELIS',0,NULL,'Qualification','Qualification',25,NULL,NULL,'Candidature transmise à HELIS le 19/08/2026 pour mission freelance 12 mois de Directeur de Programme IT (transformation & déménagement de sites, La Défense). Jay a proposé 850 € HT/jour et posé deux questions de cadrage sur le budget du programme et le TJM client.','2026-08-19 11:35:17','2026-08-19 11:35:21',NULL,'2026-08-19 11:35:17','6a8578ce56b712742',NULL,NULL,'6a0e7568ca1894944','6a0e7568ca1894944',NULL,2,NULL,NULL,'6a18473f1e4549d8a',NULL,NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAGMJ37eGqJRGi8bxjqJz8VY='),
 ('6a8702908b35f2e27','Directeur de Programme IT – Transformation & Déménagement de sites',0,NULL,'Perdue','Reportée',0,NULL,NULL,'Candidature refusée sur Free-Work ; motif : rémunération non alignée avec le budget proposé.','2026-08-20 13:35:12','2026-08-20 13:35:12',NULL,'2026-08-20 13:35:12',NULL,NULL,NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,'6a18473f1e4549d8a',NULL,NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAKxqRgXJ3fVCkrmlvurR6G8='),
-('6a8870371588bf18b','Nouvelle opportunité chez Synapsys',0,NULL,'Prospection','Prospection',10,NULL,NULL,'Camille Bourgeois (recruteur, Synapsys) propose un appel avant 10h pour discuter d\'une opportunité.','2026-08-21 15:35:19','2026-08-21 15:35:19',NULL,'2026-08-21 15:35:19',NULL,'6a88703377c6fa620',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,'6a887031047ca449a',NULL,NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAOv578NE1VRGkMTZ4k6dhMY=');
+('6a8870371588bf18b','Nouvelle opportunité chez Synapsys',0,NULL,'Prospection','Prospection',10,NULL,NULL,'Camille Bourgeois (recruteur, Synapsys) propose un appel avant 10h pour discuter d\'une opportunité.','2026-08-21 15:35:19','2026-08-21 15:35:19',NULL,'2026-08-21 15:35:19',NULL,'6a88703377c6fa620',NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,'6a887031047ca449a',NULL,NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAOv578NE1VRGkMTZ4k6dhMY='),
+('6a8c10565015bc512','Consultant Senior Adoption Copilot & Transformation des Usages',0,NULL,'Prospection','Prospection',10,NULL,NULL,'Copilot Microsoft 365, Animation de communautés, Conduite du changement. Début septembre 2026, 6 mois+, Paris. Via broker Crème de la crème.','2026-08-24 09:35:18','2026-08-24 09:35:18',NULL,'2026-08-24 09:35:18','6a8c105250744d9fc',NULL,NULL,'6a0e7568ca1894944',NULL,NULL,1,NULL,NULL,'6a1cc959e73224705',NULL,NULL,'AAQkADA1MWU5NDk2LTY1YjktNGMwMy05ZmFiLWFlOTZlMTk4MTU1YQAQAK1tYDmj7DpBuNsa9pYSd80='),
+('6a8c5b2a84ac3f7ab','SeD - Directeur des Systemes d\'Information (CDI, Moussy-le-Neuf 77)',0,NULL,'Qualification','Qualification',25,NULL,NULL,'TYPE : CDI cadre au forfait jours. Ce n\'est PAS une mission de transition. Axe assume par Jay le 2026-08-24 : recherche d\'un CDI bien remunere en parallele des missions.\n\nPOSTE : Directeur des Systemes d\'Information, rattachement DIRECT au President. Perimetre complet : strategie et schema directeur SI, cybersecurite et conformite (RGPD, NIS2 cite dans la version SeD de l\'annonce), gouvernance des donnees, disponibilite et performance des infrastructures, budget et gestion contractuelle, management des equipes SI internes et des prestataires, appui avant-vente sur les appels d\'offres (engagements techniques et securite).\nLieu : Moussy-le-Neuf (77), SUR PLACE, aucun teletravail annonce. Horaires indicatifs 9h-18h.\nProfil demande : Bac+5, 5 a 10 ans en responsabilite SI, environnement logistique / transport / supply chain / industriel, systemes critiques et multi-sites, maitrise WMS / TMS / EDI / telecoms / mobilite IT.\n\nREMUNERATION [a confirmer aupres de l\'employeur] : l\'annonce SeD et l\'annonce Connectt n\'affichent aucun chiffre (\'selon profil et experience\'). Le cabinet Focus Recrutement, mandate sur le meme poste, affiche 90 000 - 120 000 EUR / an (releve sur Hellowork le 2026-08-24). La fourchette 110 000 - 150 000 vue sur JobLeads est une ESTIMATION D\'AGREGATEUR, non attribuable a l\'employeur : ne pas la citer en entretien.\n\nCANAL : SeD publie l\'offre EN DIRECT (Hellowork, employeur \'SED\') et l\'a aussi confiee a au moins deux cabinets : Connectt Interim & Placement et Focus Recrutement. DECISION A PRENDRE PAR JAY : un seul canal. Recommandation Claude = candidature DIRECTE chez SeD (pas de commission cabinet de 15-25 % du salaire annuel a la charge de l\'employeur, donc plus de marge salariale ; et zero risque de double presentation, qui fait ecarter un dossier).\n\nECART DE COMPETENCE ASSUME : Jay n\'a jamais exploite de WMS ni de TMS en propre. Son exposition a ces environnements est celle du donneur d\'ordre (contrat de prestation logistique et interconnexion des SI, Fort de Gourmets). A dire en une phrase, pas a masquer.\n\nAPPARIEMENT FORT : GEFCO, logistique et transport, 21 pays, 500 serveurs infogeres Capgemini, 8 000 postes migres, 12 000 utilisateurs, 18 responsables IT nationaux animes.\n\nCV produit : outputs/cv/CV_JAN_DSI-Logistique-Transport_2608.fr.{json,docx,pdf}.\n\n--- MAJ 2026-08-24, canal tranche par Jay ---\nCANAL RETENU : candidature DIRECTE chez SeD. Connectt et Focus Recrutement sont ecartes et ne doivent plus etre utilises sur ce poste (risque de double presentation).\nLien de candidature direct (employeur = SED, pas un cabinet) :\n  https://www.hellowork.com/fr-fr/emplois/78535043.html\n  Publiee le 31/07/2026. Ref 3878746/28615662 DDSD/77M. Salaire non renseigne cote SeD.\n  NB : l annonce SeD 78581201 est expiree, ne pas l utiliser.\n  Le portail carrieres propre a SeD (sedlogistique.jobtransport.com) est MORT (301 vers la home de jobtransport.com) : Hellowork est donc bien le canal direct.\n\nECARTS ENTRE LA VERSION SeD ET LA VERSION CONNECTT (la version SeD fait foi) :\n- Rattachement : SeD ecrit \"en lien avec la direction generale et le CODIR IT\", la version Connectt disait \"rattache directement au President\". Un CODIR IT existe donc deja : gouvernance en place, perimetre de decision a verifier en entretien.\n- Perimetre plus large cote SeD : PCA ET PRA (cites deux fois), NIS2, bonnes pratiques ISO, gestion de crise cyber avec exercices et assureurs cyber, urbanisation et architecture applicative, reversibilite contractuelle, CAPEX/OPEX, valorisation de la donnee (analytics).\n- Process de recrutement : analyse -> echange telephonique RH -> entretien RH visio ou presentiel -> entretien physique avec le FUTUR MANAGER -> validation. Le President n intervient pas en debut de process.\n\nTAILLE, precision : la fiche entreprise Hellowork de l entite qui recrute affiche 50 a 250 salaries et 80 M EUR de CA, siege Marly-la-Ville (95), fondee en 1971. sed.fr annonce 500 professionnels et 98 M EUR pour le GROUPE. Les deux sont sous la cible du core positioning (1 000-5 000+).\nTELETRAVAIL : la fiche entreprise Hellowork indique \"Occasionnel possible\". Ce n est donc pas zero, mais ce n est pas le 3+2 par defaut de Jay.\nANCIENNETE DE L OFFRE : publiee le 31/07/2026 et toujours ouverte, avec deux cabinets mandates depuis. Lecture : poste difficile a pourvoir, donc levier de negociation salariale.','2026-08-24 14:54:34','2026-08-24 15:02:08',NULL,'2026-08-24 14:54:34','6a8c5b2a6f6d8cb08',NULL,NULL,'6a01ff1c4e6698086','6a01ff1c4e6698086','6a01d2f4cebaeec7f',2,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `opportunity` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21654,25 +21746,25 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_job` WRITE;
 /*!40000 ALTER TABLE `scheduled_job` DISABLE KEYS */;
 INSERT INTO `scheduled_job` VALUES
-('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d079e6e036cc5','Process Job Group',0,'ProcessJobGroup','Active','* * * * *',NULL,'2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-24 01:17:04','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-23 22:01:02','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079eac8dbeb3','Check for New Version',0,'CheckNewVersion','Active','15 5 * * *','2026-08-23 03:15:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079eb9b15e36','Check for New Versions of Installed Extensions',0,'CheckNewExtensionVersion','Active','25 5 * * *','2026-08-23 03:25:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-23 22:02:02','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-24 22:01:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079eac8dbeb3','Check for New Version',0,'CheckNewVersion','Active','15 5 * * *','2026-08-24 03:15:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079eb9b15e36','Check for New Versions of Installed Extensions',0,'CheckNewExtensionVersion','Active','25 5 * * *','2026-08-24 03:25:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-24 22:02:06','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d07a86704fea9','Check Group Email Accounts',0,'CheckInboundEmails','Active','*/2 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8742b65ec','Check Personal Email Accounts',0,'CheckEmailAccounts','Active','*/1 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8943e0d20','Clean-up',0,'Cleanup','Active','1 1 * * 0','2026-08-22 23:01:44','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-24 01:10:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-24 01:12:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-23 23:10:02','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-24 01:16:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-24 01:10:04','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
+('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-25 01:10:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-25 01:12:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-24 23:10:06','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-25 01:10:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
 /*!40000 ALTER TABLE `scheduled_job` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21735,7 +21827,9 @@ INSERT INTO `stream_subscription` VALUES
 (14,0,'6a73164a64bda93a1','Opportunity','6a01d2f4cebaeec7f'),
 (15,0,'6a73164a989f3dce4','Task','6a01d2f4cebaeec7f'),
 (16,0,'6a7319cae4a5c0162','Opportunity','6a01d2f4cebaeec7f'),
-(17,0,'6a7319cb321a0fa2a','Task','6a01d2f4cebaeec7f');
+(17,0,'6a7319cb321a0fa2a','Task','6a01d2f4cebaeec7f'),
+(18,0,'6a8c5b2a6f6d8cb08','Account','6a01d2f4cebaeec7f'),
+(19,0,'6a8c5b2a84ac3f7ab','Opportunity','6a01d2f4cebaeec7f');
 /*!40000 ALTER TABLE `stream_subscription` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -22033,4 +22127,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-24  3:17:04
+-- Dump completed on 2026-08-25  3:17:05
