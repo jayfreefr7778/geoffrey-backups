@@ -1935,7 +1935,7 @@ CREATE TABLE `job` (
   KEY `IDX_STATUS` (`status`,`deleted`),
   KEY `IDX_STATUS_SCHEDULED_JOB_ID` (`status`,`scheduled_job_id`),
   KEY `IDX_SCHEDULED_JOB_ID` (`scheduled_job_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3144089 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3174071 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3771,7 +3771,7 @@ CREATE TABLE `working_time_range` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-25  3:17:05
+-- Dump completed on 2026-08-26  3:17:04
 /*M!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19-11.8.6-MariaDB, for debian-linux-gnu (x86_64)
 --
@@ -15754,7 +15754,33 @@ INSERT INTO `auth_log_record` VALUES
 ('6a8c6828a939db0d2',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:50:00',0,NULL,1787586600.6691,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
 ('6a8c6828b0a2207b7',0,'geoffrey-agent','172.18.0.50','2026-08-24 15:50:00',0,NULL,1787586600.714,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
 ('6a8c80c9c8523a00d',0,'geoffrey-agent','172.18.0.50','2026-08-24 17:35:05',0,NULL,1787592905.8009,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
-('6a8c80c9d2da0f3cb',0,'geoffrey-agent','172.18.0.50','2026-08-24 17:35:05',0,NULL,1787592905.8531,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL);
+('6a8c80c9d2da0f3cb',0,'geoffrey-agent','172.18.0.50','2026-08-24 17:35:05',0,NULL,1787592905.8531,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d2859053efd8cc',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.0065,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d28590ca06443d',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.0412,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d28591361fddfe',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.0683,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d28591c5028c42',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.1038,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d285923d19b7d8',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.1322,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d28592c4cf3f40',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.1665,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d285934f1efe30',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:30:01',0,NULL,1787635801.2068,'http://espocrm/api/v1/CInteraction','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d2d08e39558156',0,'geoffrey-agent','172.18.0.50','2026-08-25 05:50:00',0,NULL,1787637000.9148,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d45c77b3a787d4',0,'geoffrey-agent','172.18.0.50','2026-08-25 07:35:35',0,NULL,1787643335.4882,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d45c7864910bb7',0,'geoffrey-agent','172.18.0.50','2026-08-25 07:35:35',0,NULL,1787643335.5366,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d4928d715dacb5',0,'geoffrey-agent','172.18.0.50','2026-08-25 07:50:00',0,NULL,1787644200.8629,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d4928e2174242d',0,'geoffrey-agent','172.18.0.50','2026-08-25 07:50:00',0,NULL,1787644200.9114,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d61cfe5e810687',0,'geoffrey-agent','172.18.0.50','2026-08-25 09:35:11',0,NULL,1787650511.9287,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d61cfee5895f33',0,'geoffrey-agent','172.18.0.50','2026-08-25 09:35:11',0,NULL,1787650511.9622,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d7deb63d8cabee',0,'geoffrey-agent','172.18.0.50','2026-08-25 11:35:07',0,NULL,1787657707.3947,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d7deb6c2b6f5ee',0,'geoffrey-agent','172.18.0.50','2026-08-25 11:35:07',0,NULL,1787657707.4314,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d816874381f6ba',0,'geoffrey-agent','172.18.0.50','2026-08-25 11:50:00',0,NULL,1787658600.4632,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d81687c6808241',0,'geoffrey-agent','172.18.0.50','2026-08-25 11:50:00',0,NULL,1787658600.4959,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d9a103c67e57e2',0,'geoffrey-agent','172.18.0.50','2026-08-25 13:35:12',0,NULL,1787664912.2323,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8d9a10463f2117c',0,'geoffrey-agent','172.18.0.50','2026-08-25 13:35:12',0,NULL,1787664912.2734,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8db62a08f998daf',0,'geoffrey-agent','172.18.0.50','2026-08-25 15:35:06',0,NULL,1787672106.0115,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8db62a150a556d4',0,'geoffrey-agent','172.18.0.50','2026-08-25 15:35:06',0,NULL,1787672106.0704,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8db9a8b37c8ec95',0,'geoffrey-agent','172.18.0.50','2026-08-25 15:50:00',0,NULL,1787673000.7144,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8db9a8be00acbec',0,'geoffrey-agent','172.18.0.50','2026-08-25 15:50:00',0,NULL,1787673000.7649,'http://espocrm/api/v1/Task','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8dd24d9e25ee7d3',0,'geoffrey-agent','172.18.0.50','2026-08-25 17:35:09',0,NULL,1787679309.6263,'http://espocrm/api/v1/Opportunity','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL),
+('6a8dd24da9265d555',0,'geoffrey-agent','172.18.0.50','2026-08-25 17:35:09',0,NULL,1787679309.679,'http://espocrm/api/v1/Account','GET','ApiKey',NULL,'6a0e7568ca1894944',NULL);
 /*!40000 ALTER TABLE `auth_log_record` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -21746,25 +21772,25 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_job` WRITE;
 /*!40000 ALTER TABLE `scheduled_job` DISABLE KEYS */;
 INSERT INTO `scheduled_job` VALUES
-('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e5d6d19f2','Submit Popup Reminders',0,'SubmitPopupReminders','Active','* * * * *','2026-08-26 01:17:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d079e6e036cc5','Process Job Group',0,'ProcessJobGroup','Active','* * * * *',NULL,'2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-25 01:16:57','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-24 22:01:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079eac8dbeb3','Check for New Version',0,'CheckNewVersion','Active','15 5 * * *','2026-08-24 03:15:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079eb9b15e36','Check for New Versions of Installed Extensions',0,'CheckNewExtensionVersion','Active','25 5 * * *','2026-08-24 03:25:05','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
-('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-24 22:02:06','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e799f6c1c','Process Job Queue q0',0,'ProcessJobQueueQ0','Active','* * * * *','2026-08-26 01:17:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e85ae0f99','Process Job Queue q1',0,'ProcessJobQueueQ1','Active','*/1 * * * *','2026-08-26 01:17:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9169e734','Process Job Queue e0',0,'ProcessJobQueueE0','Active','* * * * *','2026-08-26 01:17:01','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079e9ee72c74','Dummy',0,'Dummy','Active','1 */12 * * *','2026-08-25 22:01:09','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079eac8dbeb3','Check for New Version',0,'CheckNewVersion','Active','15 5 * * *','2026-08-25 03:15:08','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079eb9b15e36','Check for New Versions of Installed Extensions',0,'CheckNewExtensionVersion','Active','25 5 * * *','2026-08-25 03:25:09','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
+('6a01d079ec76852e2','Sync Currency Rates',0,'SyncCurrencyRates','Active','2 0 * * *','2026-08-25 22:02:09','2026-05-11 12:50:01','2026-05-11 12:50:01',1,NULL,NULL),
 ('6a01d07a86704fea9','Check Group Email Accounts',0,'CheckInboundEmails','Active','*/2 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8742b65ec','Check Personal Email Accounts',0,'CheckEmailAccounts','Active','*/1 * * * *',NULL,'2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a87e660eff','Send Email Reminders',0,'SendEmailReminders','Active','*/2 * * * *','2026-08-26 01:16:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8894b174a','Send Email Notifications',0,'SendEmailNotifications','Active','*/2 * * * *','2026-08-26 01:16:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
 ('6a01d07a8943e0d20','Clean-up',0,'Cleanup','Active','1 1 * * 0','2026-08-22 23:01:44','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-25 01:10:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-25 01:12:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-24 23:10:06','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-25 01:16:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
-('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-25 01:10:07','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
+('6a01d07a89eafa471','Send Mass Emails',0,'ProcessMassEmail','Active','10,30,50 * * * *','2026-08-26 01:10:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8a92d9436','Auth Token Control',0,'AuthTokenControl','Active','*/6 * * * *','2026-08-26 01:12:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8b3c05148','Control Knowledge Base Article Status',0,'ControlKnowledgeBaseArticleStatus','Active','10 1 * * *','2026-08-25 23:10:00','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8be234bee','Process Webhook Queue',0,'ProcessWebhookQueue','Active','*/2 * * * *','2026-08-26 01:16:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL),
+('6a01d07a8c8ec306d','Send Scheduled Emails',0,'SendScheduledEmails','Active','*/10 * * * *','2026-08-26 01:10:01','2026-05-11 12:50:02','2026-05-11 12:50:02',0,'system',NULL);
 /*!40000 ALTER TABLE `scheduled_job` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -22127,4 +22153,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-25  3:17:05
+-- Dump completed on 2026-08-26  3:17:05
